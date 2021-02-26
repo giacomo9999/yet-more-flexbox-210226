@@ -7,6 +7,16 @@ body {
   font-family: Oswald, Geneva, Tahoma, sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+  font-family: Oswald;
+  color: black;
+  font-weight: 300;
+}
+
 *,
 *::before,
 *::after {
@@ -17,6 +27,16 @@ body {
 }
 
 .photo-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 20px auto;
   width: 416px;
   height: 640px;
@@ -25,39 +45,63 @@ body {
   padding: 20px;
 }
 
-button {
-  color: #777;
-  fill: currentcolor;
-  border: 1px solid transparent;
-  background-color: whitesmoke;
-  border-radius: 4px;
-  padding: 0 11px;
+.info-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
-svg {
-  width: 16px;
+.info-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.info-left .photog-name {
+  padding: 8px;
+  background-color: white;
+  font-weight: 500;
+}
+
+.info-ends {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 5px;
+  border: none;
+  background-color: white;
+}
+
+.imported-svg {
+  width: 24px;
+  margin: 5px;
 }
 
 a {
   text-decoration: none;
-}
-
-.top svg {
-  margin-right: 5px;
-}
-
-.like-button {
-  margin-right: 10px;
-}
-
-.profile-pic {
-  border-radius: 50%;
-  width: 32px;
-  margin-right: 10px;
-}
-
-.photographer-name {
-  color: #fff;
-  text-transform: uppercase;
 }
 /*# sourceMappingURL=styles.css.map */
