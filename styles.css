@@ -1,0 +1,63 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Oswald, Geneva, Tahoma, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.photo {
+  margin: 20px auto;
+  width: 416px;
+  height: 640px;
+  background: url("./images/santorini.jpeg") top center no-repeat;
+  background-size: cover;
+  padding: 20px;
+}
+
+button {
+  color: #777;
+  fill: currentcolor;
+  border: 1px solid transparent;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 4px;
+  padding: 0 11px;
+}
+
+svg {
+  width: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.top svg {
+  margin-right: 5px;
+}
+
+.like-button {
+  margin-right: 10px;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 32px;
+  margin-right: 10px;
+}
+
+.photographer-name {
+  color: #fff;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=styles.css.map */
